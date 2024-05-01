@@ -1,0 +1,17 @@
+<h2>Busqueda por Pais</h2>
+<hr>
+<div class="row">
+
+  <div class="col">
+    <app-search-box (onDebounce)="seachByCountry($event)" [initialValue]="initialValue" placeholder=""></app-search-box>
+  </div>
+</div>
+<div class="row">
+
+  <div class="col">
+    <hr>
+   <app-contry-table [countries]="countries"></app-contry-table>
+
+  </div>
+</div>
+
